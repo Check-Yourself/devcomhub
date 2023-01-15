@@ -1,0 +1,78 @@
+**/local
+
+/bootstrap.*
+/bootstrap-*.*
+/application.*
+/application-*.*
+/gradle-ci.properties
+/hit-interviewer-schedule-sync-service/src/main/resources/application-local.yml
+/hit-interviewer-service/src/main/resources/application-local.yml
+
+/docker/*/tmp
+/docker/local/.env
+
+log/
+*.log
+hs_err_pid*
+java_pid*.hprof
+*.tmp
+
+# Docker cache:
+/.docker-cache/
+
+# Google jib cache:
+/.jib-cache/
+
+# Renovate:
+/.renovate/
+
+# Sonar:
+/.sonar/
+
+# Maven:
+target/
+
+# Gradle:
+/.gradle-cache/
+/.gradle-build-cache/
+build/
+!**/src/**/build/
+.gradle/
+
+# Intellij
+/.idea/*
+!/.idea/.editorconfig
+!/.idea/externalDependencies.xml
+!/.idea/groovyc.xml
+!/.idea/jsonSchemas.xml
+!/.idea/misc.xml
+!/.idea/sqldialects.xml
+!/.idea/saveactions_settings.xml
+!/.idea/fileTemplates/
+!/.idea/fileTemplates/*
+!/.idea/inspectionProfiles/
+!/.idea/inspectionProfiles/*
+!/.idea/jsLinters/
+!/.idea/jsLinters/*
+!/.idea/runConfigurations/
+!/.idea/runConfigurations/*
+!/.idea/scopes/
+!/.idea/scopes/*
+!/.idea/copyright/
+!/.idea/copyright/*
+!/.idea/dictionaries/
+/.idea/dictionaries/*
+!/.idea/dictionaries/.placeholder
+*.iml
+*.iws
+*.*___jb_tmp___
+/.run/
+/layout.json
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac
+.DS_Store
