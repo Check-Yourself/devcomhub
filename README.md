@@ -2,7 +2,6 @@
 
 ## local development
 To start the local environment you need preinstalled:
- - maven
  - docker
 
 ### Running of services
