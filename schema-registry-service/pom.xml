@@ -12,14 +12,14 @@
 
     <groupId>com.devcomhub</groupId>
     <artifactId>schema-registry-service</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <avro.version>1.11.1</avro.version>
-        <confluent.version>5.5.5</confluent.version>
+        <confluent.version>7.4.0</confluent.version>
     </properties>
 
     <pluginRepositories>
