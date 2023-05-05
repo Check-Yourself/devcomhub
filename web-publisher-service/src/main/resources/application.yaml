@@ -9,11 +9,8 @@ devcomhub:
     producer:
       payment-sent:
         topic: "payment-sent"
-        enabled: true
-        initial-offset: 48
-        group: "demo-consumer-group"
-    #      producer#2
-    #      producer#3
+#      producer#2
+#      producer#3
     consumer:
 #      consumer#1
 #      consumer#2
