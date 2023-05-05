@@ -1,17 +1,15 @@
 package com.devcomhub.webpublisherservice.properties;
 
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
 
-@Configuration
+@Component
 @ConfigurationProperties("devcomhub.kafka-prop.producer.payment-sent")
-@Getter
-@Setter
+@Data
 @Validated
 public class KafkaDemoProperties {
     @NotNull

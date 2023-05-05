@@ -1,4 +1,4 @@
-package com.devcomhub.webpublisherservice;
+package com.devcomhub.webpublisherservice.config;
 
 import demo.kafka.event.PaymentSent;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
@@ -20,8 +20,7 @@ import java.util.Map;
 @Slf4j
 @ComponentScan(basePackages = {"com.devcomhub.webpublisherservice"})
 @Configuration
-public class AppConfiguration {
-
+public class KafkaProducerConfiguration {
     @Bean
     public KafkaTemplate<String, PaymentSent> kafkaTemplate(final ProducerFactory<String, PaymentSent> producerFactory) {
         return new KafkaTemplate<>(producerFactory);
