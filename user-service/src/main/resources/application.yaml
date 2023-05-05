@@ -1,2 +1,19 @@
 server:
   port: 8080
+
+devcomhub:
+  kafka-prop:
+    bootstrap-servers: localhost:9092
+    schema-registry-url: http://localhost:8081
+
+    producer:
+      payment-sent:
+        topic: "payment-sent"
+        enabled: true
+        initial-offset: 48
+        group: "demo-consumer-group"
+    #      producer#2
+    #      producer#3
+    consumer:
+#      consumer#1
+#      consumer#2
